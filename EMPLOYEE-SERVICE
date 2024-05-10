@@ -1,0 +1,22 @@
+eureka.instance.hostname=localhost
+
+#Application Server Port 
+server.port=8001
+
+
+# H2 database configuration
+
+spring.datasource.url=jdbc:h2:mem:dcbapp;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=p
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+#spring.datasource.initialization-mode = always
+spring.jpa.defer-datasource-initialization=true
+spring.sql.init.mode=always
+spring.h2.console.settings.trace=true
+
+
+#H2 settings
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
